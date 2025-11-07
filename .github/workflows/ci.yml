@@ -1,0 +1,25 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: echo "Simulando build..."
+
+      - name: Run tests
+        run: |
+          echo "Simulando teste..."
+          exit 0 # Aqui você pode substituir por uma ferramenta real de testes, como pytest
+
+      - name: Report
+        run: echo "Build successful"
