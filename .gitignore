@@ -1,0 +1,16 @@
+# Python
+*.pyc
+__pycache__/
+
+# Ambiente virtual
+venv/
+.env
+
+# Arquivos de configuração do editor (exemplo com VSCode)
+.vscode/
+
+# Arquivos de IDE
+.idea/
+
+# Arquivos de ambiente e credenciais
+config.env
